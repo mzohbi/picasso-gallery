@@ -1,9 +1,8 @@
-let React = require('react');
-let CreateReactClass = require('create-react-class');
-let ListItem = require('./ListItem.jsx');
+import React from 'react';
+import ListItem from './ListItem.jsx';
 
-let List = CreateReactClass({
-  render: function() {
+class List extends React.Component {
+  render() {
 
     let createItem = function(text, index) {
       return <ListItem key={index + text} text={text} />;
@@ -11,6 +10,6 @@ let List = CreateReactClass({
 
     return (<ul>{this.props.items.map(createItem)}</ul>);
   }
-});
+}
 
 module.exports = List;

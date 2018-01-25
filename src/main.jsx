@@ -1,8 +1,8 @@
-let React = require('react');
-let ReactDOM = require('react-dom');
-let PhotoCard = require('./components/PhotoCard.jsx');
-let InfoCard = require('./components/InfoCard.jsx');
-let ListBuilderCard = require('./components/ListBuilderCard.jsx');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PhotoCard from './components/PhotoCard.jsx';
+import InfoCard from './components/InfoCard.jsx';
+import ListBuilderCard from './components/ListBuilderCard.jsx';
 
 ReactDOM.render(<PhotoCard title="Child with a Dove | 1901" source="https://www.pablopicasso.org/images/paintings/child-with-a-dove.jpg" />, document.getElementById('rpg-col1-1'));
 ReactDOM.render(<PhotoCard title="Paul in a Clown Suit | 1924" source="https://www.pablopicasso.org/images/paintings/paul-in-a-clown-suit.jpg" />, document.getElementById('rpg-col1-2'));

@@ -1,14 +1,13 @@
-let React = require('react');
-let CreateReactClass = require('create-react-class');
+import React from 'react';
 
-let InfoCard = CreateReactClass({
-  render: function() {
+class InfoCard extends React.Component {
+  render() {
 
-    let divStyle = {
+    const divStyle = {
       marginTop: 10,
       paddingBottom: 90,
       paddingTop: 90,
-      textShadow: "2px 2px 4px rgba(0, 0, 0, 0.8)"
+      textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
     };
 
     if (this.props.backgroundColour) {
@@ -16,14 +15,14 @@ let InfoCard = CreateReactClass({
     }
 
     return (
-        <div className="card text-white" style={divStyle}>
-          <div className="card-body">
-            <h1 className="card-title text-right">{this.props.title}</h1>
-            <h6 className="card-subtitle mb-2 text-white text-right">{this.props.secondaryTitle}</h6>
-          </div>
+      <div className="card text-white" style={divStyle}>
+        <div className="card-body">
+          <h1 className="card-title text-right">{this.props.title}</h1>
+          <h6 className="card-subtitle mb-2 text-white text-right">{this.props.secondaryTitle}</h6>
         </div>
+      </div>
     );
   }
-});
+}
 
 module.exports = InfoCard;

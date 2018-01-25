@@ -4,7 +4,7 @@
   "description": "A basic CommonJS React skeleton application.",
   "main": "index.js",
   "scripts": {
-    "start": "watchify src/main.jsx -v -t [ babelify --presets [ react ] ] -o public/js/main.js"
+    "start": "watchify src/main.jsx -v -t [ babelify --presets [ es2015 react ] ] -o public/js/main.js"
   },
   "repository": {
     "type": "git",
@@ -17,12 +17,14 @@
   },
   "homepage": "https://github.com/mzohbi/react-skeleton",
   "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babelify": "^8.0.0",
-    "create-react-class": "^15.6.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
     "watchify": "^3.9.0"
   }
 }

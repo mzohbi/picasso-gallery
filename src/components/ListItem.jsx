@@ -1,14 +1,13 @@
-let React = require('react');
-let CreateReactClass = require('create-react-class');
+import React from 'react';
 
-let ListItem = CreateReactClass({
-  render: function() {
+class ListItem extends React.Component {
+  render() {
     return (
-        <li>
-          <h4>{this.props.text}</h4>
-        </li>
+      <li>
+        <h4>{this.props.text}</h4>
+      </li>
     );
   }
-});
+}
 
 module.exports = ListItem;
