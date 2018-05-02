@@ -1,21 +1,21 @@
 {
-  "name": "react-skeleton",
+  "name": "react-picasso-gallery",
   "version": "1.0.0",
-  "description": "A basic CommonJS React skeleton application.",
+  "description": "An application using React and Bootstrap grid.",
   "main": "index.js",
   "scripts": {
     "start": "watchify src/main.jsx -v -t [ babelify --presets [ es2015 react ] ] -o public/js/main.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mzohbi/react-skeleton.git"
+    "url": "https://github.com/mzohbi/react-picasso-gallery.git"
   },
   "author": "Maha Zohbi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mzohbi/react-skeleton/issues"
+    "url": "https://github.com/mzohbi/react-picasso-gallery/issues"
   },
-  "homepage": "https://github.com/mzohbi/react-skeleton",
+  "homepage": "https://github.com/mzohbi/react-picasso-gallery",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
